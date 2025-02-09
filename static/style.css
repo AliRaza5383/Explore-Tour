@@ -1,0 +1,83 @@
+/* Navbar and background video settings */
+#navbar {
+    position: relative;
+    width: 100%;
+    height: 65px; /* Adjust the height of the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Background video settings */
+#background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures video fills the navbar */
+    z-index: -1; /* Places the video behind the logo and menu */
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the navbar */
+}
+
+/* Logo container settings */
+#logo-container {
+    position: relative;
+    z-index: 1; /* Ensures the logo appears above the video */
+    padding: 10px;
+}
+
+#logo-container img {
+    height: 60px; /* Adjust logo height as needed */
+    width: auto;
+}
+
+/* Navbar menu styling */
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+    z-index: 1; /* Ensures the menu is above the video */
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+.buttons-container button {
+    background-color: rgba(0, 188, 212, 0.8); /* Semi-transparent button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buttons-container button:hover {
+    background-color: rgba(0, 150, 180, 0.9);
+}

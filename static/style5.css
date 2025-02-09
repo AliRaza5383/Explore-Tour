@@ -1,0 +1,258 @@
+.schedule-container {
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .tour-schedule {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .tour-item {
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 35px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .tour-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .tour-item h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .tour-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .tour-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .tour-item a:hover {
+    background-color: #45a049;
+  }
+  
+  .other-info {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  margin-top: 0;
+}
+
+#navbar ul li {
+  display: inline;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#navbar ul li a:hover {
+  text-decoration: underline;
+  border-radius: 4px;
+  background-color: #2d2828;
+}
+
+/* Social Media and Contact */
+#social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#social-icons a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 18px;
+}
+
+#social-icons a:hover {
+  color: #ccc;
+}
+
+#social-icons img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* Logo */
+#navbar img {
+  height: 40px;
+  width: auto;
+}
+
+#container-text {
+  text-align: center;
+  margin-top: 0px;
+  padding: 160px;
+  border-radius: 8px;
+}
+
+#heading-1 {
+  color: #ff8400;
+}
+
+#event-intro h2 {
+  text-align: center;
+  margin-top: 300px;
+}
+
+#cards-sections {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.card detail {
+  text-align: left;
+  font-size: 14px;
+}
+
+.card button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.card button:hover {
+  background-color: #45a049;
+}
+
+/* New Section for Form */
+#sign-up {
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sign-up h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.signup-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Button styles */
+.buttons-container button {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.buttons-container button:hover {
+  background-color: #0097a7;
+}
+
+/* Styling for the video container */
+#video-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust height as needed for the section */
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the container */
+  z-index: -1; /* Places the video behind the text */
+}
+
+/* Styling for the text container */
+#container-text {
+  position: relative;
+  z-index: 1; /* Ensures the text appears above the video */
+  text-align: center;
+  padding: 20px 211px;
+}
+
+#heading-1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 170px; /* Adjust padding to align text vertically */
+}

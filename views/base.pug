@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title Welcome to TravelQuest
+    block style
+  body
+    nav#navbar
+      div#background-container
+        video#background(autoplay muted loop)
+          source(src="/static/starse.mp4", type="video/mp4")
+          | Your browser does not support the video tag.
+      div#logo-container
+        img(src="/static/logo best.jpg", alt="Logo")
+      ul
+        li
+          a(href="/") Home
+        li
+          a(href="/about") About
+        li
+          a(href="/register") Register
+        li
+          a(href="/schedule") Schedule
+        li
+          a(href="/contact") Contact Us
+        .buttons-container
+          button(type="button" onclick="location.href='/login'") Login
+          button(type="button" onclick="location.href='/signup'") Sign Up    
+    block content
+    block scripts

@@ -1,0 +1,118 @@
+extend base.pug
+
+block style
+  link(rel="stylesheet", href="/static/style.css")
+  link(rel="stylesheet", href="/static/style2.css")
+
+block content
+  div#video-container 
+   video.bg-video(autoplay muted loop)
+     source(src="/static/background jungle.mp4", type="video/mp4")
+     | Your browser does not support the video tag.
+  
+  // Welcome Section
+  section#image
+    div#container-text
+      h2#heading-1 Welcome to TravelQuest - Your Ultimate Guide to Unforgettable Travel Experiences!
+
+  // Event Highlights Section
+  section#event-intro
+    h2 Top Highlights of Our Event
+    article#cards-sections
+      // Card 1: Hunza Valley
+      div.card
+        img(src="/static/Hunza Valley.jpg", alt="Hunza Valley")
+        h3 Explore Hunza Valley
+        detail
+          ul
+            li Date: March 15-20, 2025
+            li Time: Departure at 7:00 AM
+            li Location: Hunza Valley, Gilgit-Baltistan
+            li Bus Pickup Location: Islamabad, F-10 Markaz
+            li Highlights: Experience breathtaking mountain views, historic forts, and serene lakes.
+        label
+          button(type="button", class="btn") Register Now
+      
+      // Card 2: Fairy Meadows Adventure
+      div.card
+        img(src="/static/Fairy Meadows Adventure.jpg", alt="Fairy Meadows")
+        h3 Fairy Meadows Adventure
+        detail
+          ul
+            li Date: March 15-20, 2025
+            li Time: Departure at 7:00 AM
+            li Location: Fairy Meadows, Gilgit-Baltistan
+            li Bus Pickup Location: Islamabad, F-10 Markaz
+            li Highlights: Hike to Nanga Parbat base camp and enjoy the serene meadows.
+        label
+          button(type="button", class="btn") Register Now
+      
+      // Card 3: Swat Valley Retreat
+      div.card
+        img(src="/static/Swat Valley Retreat.jpg", alt="Swat Valley")
+        h3 Swat Valley Retreat
+        detail
+          ul
+            li Date: March 15-20, 2025
+            li Time: Departure at 7:00 AM
+            li Location: Swat Valley, Khyber Pakhtunkhwa
+            li Bus Pickup Location: Islamabad, F-10 Markaz
+            li Highlights: Discover lush green valleys, waterfalls, and rich culture.
+        label
+          button(type="button", class="btn") Register Now
+      
+      // Card 4: Ratti Gali Lake Excursion
+      div.card
+        img(src="/static/Ratti Gali Lake Excursion.jpg", alt="Ratti Gali Lake")
+        h3 Ratti Gali Lake Excursion
+        detail
+          ul
+            li Date: March 15-20, 2025
+            li Time: Departure at 7:00 AM
+            li Location: Ratti Gali Lake, Azad Kashmir
+            li Bus Pickup Location: Islamabad, F-10 Markaz
+            li Highlights: Enjoy a serene lake surrounded by breathtaking landscapes.
+        label
+          button(type="button", class="btn") Register Now
+
+  // Sign-up Section
+  section#sign-up
+    h3 Sign Up for Exclusive Updates!
+    form(action="/submit", method="POST", class="signup-form")
+      .form-group
+        label(for="fullName") Full Name
+        input(type="text", id="fullName", name="fullName", placeholder="Enter your full name", required)
+      .form-group
+        label(for="email") Email Address
+        input(type="email", id="email", name="email", placeholder="Enter your email", required)
+      .form-group
+        label(for="phone") Phone Number
+        input(type="text", id="phone", name="phone", placeholder="Enter your phone number", required)
+      .form-group
+        label(for="password") Password
+        input(type="password", id="password", name="password", placeholder="Create a password", required)
+      .form-group
+        label(for="confirmPassword") Confirm Password
+        input(type="password", id="confirmPassword", name="confirmPassword", placeholder="Confirm your password", required)
+      .form-group
+        label(for="terms")
+          input(type="checkbox", id="terms", name="terms", required)
+          | I agree to the terms and conditions
+      button(type="submit", class="submit-btn") Sign Up
+
+  // Footer Section
+  footer#logo
+    div#social-icons
+      a(href="https://facebook.com" target="_blank")
+        img(src="/static/facebook logo.jpg", alt="Facebook")
+      a(href="https://instagram.com" target="_blank")
+        img(src="/static/instagram logo.jpg", alt="Instagram")
+      a(href="https://twitter.com" target="_blank")
+        img(src="/static/twitter logo.jpg", alt="Twitter")
+      a(href="https://wa.me/1234567890")
+        img(src="/static/whatsapp logo.jpg", alt="WhatsApp")
+      a(href="https://t.me/yourchannel")
+        img(src="/static/telegram log.jpg", alt="Telegram")
+      a(href="tel:+1234567890")
+        img(src="/static/phone logo.jpg", alt="Phone")
+    p &copy; 2025 TravelQuest

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.21.2",
+    "pug": "^3.0.3"
+  },
+  "name": "project_6-first-pug-backend-website",
+  "version": "1.0.0",
+  "description": "this is npm for the my project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AliRaza",
+  "license": "ISC"
+}
